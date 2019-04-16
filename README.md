@@ -97,3 +97,4 @@ Some | table
 1. Move Line - Ctrl + Shift + Arrow up/down
 1. Multiselect - Ctrl + D
 1. Duplicate line - Ctrl + Shift + D
+1. Togle view side bar = ctrl - B
