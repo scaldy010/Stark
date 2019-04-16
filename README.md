@@ -79,7 +79,8 @@ const someName = (some, param) => {};
 **bold**
 `code`
 ~~strikeout~~
-
+- [X] Tick box ticked
+- [] Tick box not ticked
 [Link title](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 [Internal Linking](#stark)
