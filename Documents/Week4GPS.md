@@ -1,16 +1,3 @@
-function initMap() {
-    var cct = { lat: 53.346, lng: -6.2588 };
-    var map = new
-        google.maps.Map(document.getElementById('map'),
-            {
-                zoom: 4,
-                center: cct
-            }
-        );
-    var marker = new google.maps.Marker({
-        position: cct,
-        map: map
-    });
 # GPS Location
 
 ## Objectives
