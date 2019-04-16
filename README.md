@@ -60,7 +60,7 @@ const someName = (some, param) => {};
 
 ---
 
-## Markdown Cheetsheet
+# Markdown Cheetsheet
 
 # on commit, 
 
@@ -89,7 +89,7 @@ block code
 Some | table
 
 
-## VS Code Cheet Sheet
+# VS Code Cheet Sheet
 
 1. File Jumper - Ctrl + P
 1. Command Palette - Ctrl + Shift + p
@@ -98,3 +98,12 @@ Some | table
 1. Multiselect - Ctrl + D
 1. Duplicate line - Ctrl + Shift + D
 1. Togle view side bar = ctrl - B
+
+
+
+# phoneGap complie
+
+1. go to https://build.phonegap.com
+2. create new app 
+3. input git link https://github.com/scaldy010/Stark
+4. follow on screen instructions 
