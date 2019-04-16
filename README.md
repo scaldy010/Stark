@@ -44,12 +44,12 @@
 4. present to user 
 5. save data
 
-### pase 3 B - Implement take a picure
+### phase 3 B - Implement take a picure
 
 1. take picture 
 2. galerry vs camera, is this  somehting i need to think about 
 
-### pase 3 C - Google Maps
+### phase 3 C - Google Maps
 
 1. Show location on google maps
 2. Show pins of saved activity on map
