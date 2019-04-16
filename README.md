@@ -9,10 +9,13 @@
 - ~~Setup IDE~~ 
 - ~~Setup GIT~~
 - ~~Learn markdown~~ 
-- gatehr links to demos
-    - [ Take picture ](https://cordova.apache.org/plugins/?q=camera)
-    - [ Currency Converter ](./Documents/Currencyconverter.md)
-    - [ Saving data ](./Documents/Savingdata.md)
+- ~~gatehr links to demos~~
+    - [X] [ Take picture ](https://cordova.apache.org/plugins/?q=camera)
+    - [X] [ Currency Converter ](./Documents/Currencyconverter.md)
+    - [ ] [ Saving data ](./Documents/Savingdata.md)
+    - [ ] [ GPS  ](./Documents/GPS.md)
+    - [ ] [ External API's ](./Documents/ExternalAPI.md)
+
 
 ### Phase 1 - practical research 
 
