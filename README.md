@@ -10,7 +10,7 @@
 - ~~Setup GIT~~
 - ~~Learn markdown~~ 
 - ~~gatehr links to demos~~
-    - [X] [ Take picture ](https://cordova.apache.org/plugins/?q=camera)
+    - [X] [ Take picture ](./Documents/Picture.md)
     - [X] [ Currency Converter ](./Documents/Currencyconverter.md)
     - [ ] [ Saving data ](./Documents/Savingdata.md)
     - [ ] [ GPS  ](./Documents/GPS.md)
