@@ -11,7 +11,8 @@
 - ~~Learn markdown~~ 
 - gatehr links to demos
     - [ Take picture ](https://cordova.apache.org/plugins/?q=camera)
-    - [ Currency Converter ](./Documents/CA1answer.md)
+    - [ Currency Converter ](./Documents/Currencyconverter.md)
+    - [ Saving data ](./Documents/Savingdata.md)
 
 ### Phase 1 - practical research 
 
