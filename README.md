@@ -6,18 +6,22 @@
 
 ### phase 0
 
-1. Setup IDE 
-2. Setup GIT
-3. Learn markdown 
-4. gatehr links to demos
+- ~~Setup IDE~~ 
+- ~~Setup GIT~~
+- ~~Learn markdown~~ 
+- gatehr links to demos
+    - [ Take picture ](https://cordova.apache.org/plugins/?q=camera)
+    - 
 
 ### Phase 1 - practical research 
 
-1. Working GPS demo 
-2. Working weather API demo 
-3. Working take picture demo 
-4. Working save data demo 
-5. working currency exchange demo 
+> Get working demos of essential functinoality and cut useful snippets into a reminder location
+
+- GPS
+- weather API 
+- take picture 
+- save data 
+- currency exchange 
 
 ### phase 2 - skeleton project 
 
@@ -70,6 +74,7 @@ const someName = (some, param) => {};
 *italics*
 **bold**
 `code`
+~~strikeout~~
 
 [Link title](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
@@ -82,3 +87,13 @@ block code
 | Head | Col |
 | --- | --- |
 Some | table
+
+
+## VS Code Cheet Sheet
+
+1. File Jumper - Ctrl + P
+1. Command Palette - Ctrl + Shift + p
+1. Multi-caret - Ctrl + Alt + Arrow
+1. Move Line - Ctrl + Shift + Arrow up/down
+1. Multiselect - Ctrl + D
+1. Duplicate line - Ctrl + Shift + D
