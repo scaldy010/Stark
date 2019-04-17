@@ -12,9 +12,9 @@
 - ~~gatehr links to demos~~
     - [X] [ Take picture ](./Documents/Picture.md)
     - [X] [ Currency Converter ](./Documents/Currencyconverter.md)
-    - [ ] [ Saving data ](./Documents/Savingdata.md)
-    - [ ] [ GPS  ](./Documents/GPS.md)
-    - [ ] [ External API's ](./Documents/ExternalAPI.md)
+    - [X] [ Saving data ](./Documents/Savingdata.md)
+    - [X] [ GPS  ](./Documents/GPS.md)
+    - [x] [ External API's ](./Documents/ExternalAPI.md)
 
 
 ### Phase 1 - practical research 
@@ -22,10 +22,47 @@
 > Get working demos of essential functinoality and cut useful snippets into a reminder location
 
 - GPS
+
+#### Notes place holder 
+
+#### code place holder 
+```
+
+
+```
+
 - weather API 
+#### Notes place holder 
+
+#### code place holder 
+```
+
+
+```
 - take picture 
+#### Notes place holder 
+
+#### code place holder 
+```
+
+
+```
 - save data 
+#### Notes place holder 
+
+#### code place holder 
+```
+
+
+```
 - currency exchange 
+#### Notes place holder 
+
+#### code place holder 
+```
+
+
+```
 
 ### phase 2 - skeleton project 
 
