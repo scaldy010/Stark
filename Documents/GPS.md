@@ -1,22 +1,32 @@
-Mobile Development
-GPS Location
-Objectives
+
+# GPS Location
+
+## Objectives
+
 - Use Phonegap to read the GPS location of the device.
 - Use the Google Map API to display a map in your application
 - Use the reading of the GPS sensor to pin point the location of the device on a Google Map
-Background / Preparation
+
+##Background / Preparation
+
 In this activity you’ll be using Phonegap. You can use the hello world template that is built-in, as it
 already has the geolocation plugin, or you can decide to use another template and add the plugin as
 last week.
-Tasks 1 and 2:
+
+### Tasks 1 and 2:
+
 The function that Phonegap provides to access the GPS sensor in the phone is:
 navigator.geolocation.getCurrentPosition(geoCallback, onError)
 The functions “geoCallback” and “onError” are callback functions that will be called after.
-Task 3:
+
+### Task 3:
+
 The sample code provided includes the lecturer’s API key. If you would like to create you own API
 key (which is recommended) you will need to sign up to use the Google Map API. The first year of
 use of the API is for free, but you will need a credit/debit card to sign up anyway.
-Task 1: Get the GPS reading from you device on the console.
+
+## Task 1: Get the GPS reading from you device on the console.
+
 a. Create a new function called getLocation() to wrap up the getCurrentPosition function
 provided above.
 b. Create the geoCallback function:
@@ -27,7 +37,9 @@ c. Create the onError function
 - Print to the console the content of the message object.
 d. Create a button on the front end to call the getLocation function.
 e. Run your app using your web browser, and inspect the page to see the result.
-Task 2: Get the GPS reading from you device on the front end.
+
+##Task 2: Get the GPS reading from you device on the front end.
+
 a. Create a place holder in the HTML file to display the GPS position.
 b. Modify the geoCallback function to extract the data from the position object, and display on
 front end using the place holder created in part a.
@@ -53,16 +65,22 @@ with USD$300 bonus to use their full capabilities within a year, if you enable t
 billing. This should be plenty of credit to get you through this module.
 Mandatory Section:
 h. Add a place holder for your map in the HTML file of your app.
-- <div id="map"></div>
+ `<div id="map"></div>`
 i. Add the script code to import the Google Map JavaScript API
-- <script
+
+```javascript
+<script
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp
 FPNQ2WxbEueUXMJBPHjLenlPnFo68ls&callback=initMap">
 </script>
+```
 - The key above is mine. Feel free to use it, but consider using your own.
 - Notice that the callback function is initMap
 j. Include the initMap function in your JavaScript file
-- function initMap() {
+
+```javascript
+
+function initMap() {
  var cct = {lat: 53.346, lng: -6.2588};
  var map = new
 google.maps.Map(document.getElementById('map'),
@@ -75,14 +93,20 @@ google.maps.Map(document.getElementById('map'),
  map: map
  });
 }
+```
 k. Add the style code to display the map properly in your CSS file
-- #map {
+
+```css
+#map {
  height: 400px;
  width: 100%;
 }
+```
+
 l. Run your app and to make sure your map appears.
 m. If it doesn’t come up, try to debug the code.
-Task 4: Add another marker to the map in another position
+
+## Task 4: Add another marker to the map in another position
 a. Use the position {lat: 53.3458, lng: -6.2575}
 b. Run the app to display the both markers on the map.
 c. Can you tell me the place that I’m pointing to?
