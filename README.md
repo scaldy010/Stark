@@ -10,11 +10,14 @@
 - ~~Setup GIT~~
 - ~~Learn markdown~~ 
 - ~~gatehr links to demos~~
-    - [X] [ Take picture ](./Documents/Picture.md)
-    - [X] [ Currency Converter ](./Documents/Currencyconverter.md)
-    - [X] [ Saving data ](./Documents/Savingdata.md)
-    - [X] [ GPS  ](./Documents/GPS.md)
-    - [x] [ External API's ](./Documents/ExternalAPI.md)
+
+| Formated | link |
+| --- | --- |
+|    [X]| [ Take picture ](./Documents/Picture.md) |
+|     [X]| [ Currency Converter ](./Documents/Currencyconverter.md) |
+|     [X]| [ Saving data ](./Documents/Savingdata.md) |
+|     [X]| [ GPS  ](./Documents/GPS.md) |
+|     [x]| [ External API's ](./Documents/ExternalAPI.md) |
 
 
 ### Phase 1 - practical research 
