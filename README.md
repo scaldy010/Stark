@@ -11,13 +11,13 @@
 - ~~Learn markdown~~ 
 - ~~gatehr links to demos~~
 
-| cleaned | Formated | link |
+Cleaned | Formated | link |
 | --- | --- | --- |
-|     []| |     [X]| [ Take picture ](./Documents/Picture.md) |
-|     []| [ Currency Converter ](./Documents/Currencyconverter.md) |
-|     []| [ Saving data ](./Documents/Savingdata.md) |
-|     []| [ GPS  ](./Documents/GPS.md) |
-|     []| [ External API's ](./Documents/ExternalAPI.md) |
+|    []|    [X]| [ Take picture ](./Documents/Picture.md) |
+|    []|     [X]| [ Currency Converter ](./Documents/Currencyconverter.md) |
+|    []|     [X]| [ Saving data ](./Documents/Savingdata.md) |
+|    []|     [X]| [ GPS  ](./Documents/GPS.md) |
+|    []|     [X]| [ External API's ](./Documents/ExternalAPI.md) |
 
 
 ### Phase 1 - practical research 
