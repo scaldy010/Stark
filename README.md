@@ -42,10 +42,27 @@ Working code found on 4 March - 10 March mobile devlopment notes
 
 
 #### code place holder 
+##### HTML
+```html
+
+<div id="position">Waiting for position...</div>
+
+<div id="opencage"> Waiting for city data...</div>
+
+<div class="block">
+    <div class="row">
+        <button class="col button button-fill button-round" onclick="getLocation()"> tell me where you are!</button>
+    </div>
+</div>
+
+<div class="block">
+    <div class="row">
+        <button class="col button button-fill button-round" onclick="openCage()"> City / Country </button>
+    </div>
+</div>                                         
 ```
 
 
-```
 
 - weather API 
 #### Notes place holder 
