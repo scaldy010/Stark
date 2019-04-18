@@ -2,6 +2,9 @@
 
 > A web dev CA for Mobile Development
 
+[cheat sheet](./Documents/Cheat sheets.md)
+
+
 ## Phases 
 
 ### phase 0
