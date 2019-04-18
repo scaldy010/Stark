@@ -16,7 +16,11 @@ last week.
 ### Tasks 1 and 2:
 
 The function that Phonegap provides to access the GPS sensor in the phone is:
+
+```javascript 
 navigator.geolocation.getCurrentPosition(geoCallback, onError)
+```
+
 The functions “geoCallback” and “onError” are callback functions that will be called after.
 
 ### Task 3:

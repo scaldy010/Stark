@@ -2,8 +2,7 @@ Mobile Development
 
 [ Take picture ](https://cordova.apache.org/plugins/?q=camera)
 
-Amilcar Aponte
-Using Phonegap CLI
+
 • npm i –g phonegap
 Installing Plugins
 • Phonegap plugin add name-of-plugin
@@ -22,7 +21,8 @@ Camera – Try it
 week
 • Create a place holder in the HTML file to display the picture
 • Create a button to trigger the camera
-Camera - Code
+### Camera - Code
+```javascript
 function cameraCallback(){
 }
 <button id="buttonPic" onclick="pics()" >Picture</button>
@@ -36,12 +36,6 @@ function cameraCallback(imageData) {
 var image = document.getElementById('myImage’);
 image.src = imageData;
 }
-Get it Working
-• You need to try the app in an actual phone.
-• Just like before
-• If you want to take a photo using the web browser, the code is slightly
-different
-function cameraCallback(imageData) {
-var image = document.getElementById('myImage’);
-image.src = "data:image/jpeg;base64," + imageData;
-}
+```
+
+
