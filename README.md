@@ -2,7 +2,7 @@
 
 > A web dev CA for Mobile Development
 
-[cheat sheet](./Documents/Cheat sheets.md)
+[Mark down & vs code cheat sheet](./Documents/Cheatsheets.md)
 
 
 ## Phases 
