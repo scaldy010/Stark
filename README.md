@@ -132,6 +132,8 @@ function initMap() {
 
 ```
 - take picture 
+
+[sample take a picture with saving project](https://github.com/apontejaj/Framework2) 
 #### Notes place holder 
 
 #### code place holder 
