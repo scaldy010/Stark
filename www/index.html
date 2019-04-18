@@ -23,21 +23,12 @@
 
 <body>
 
-    <div id="position">Waiting for position...</div>
+    
 
-    <div id="opencage"> Waiting for city data...</div>
+    <div id="opencage"> You are located in</div>
+    <body onload="openCage()">
 
-    <div class="block">
-        <div class="row">
-            <button class="col button button-fill button-round" onclick="getLocation()"> tell me where you are!</button>
-        </div>
-    </div>
-
-    <div class="block">
-        <div class="row">
-            <button class="col button button-fill button-round" onclick="openCage()"> City / Country </button>
-        </div>
-    </div>
+  
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>

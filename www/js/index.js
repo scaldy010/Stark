@@ -44,7 +44,7 @@ function geoCallback(position){
     // Placing the data on the front end
     document.getElementById('position').innerHTML = location;
 }
-
+/*
 // This is the callback function for the google maps API
 function initMap() {
 
@@ -73,6 +73,8 @@ function initMap() {
     // to be able to display the map!!!
          
 } 
+
+*/
 
 // This function is going to be in charge of invoking
 // the open cage external API
