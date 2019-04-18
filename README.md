@@ -24,9 +24,22 @@ Cleaned | Formated | link |
 
 > Get working demos of essential functinoality and cut useful snippets into a reminder location
 
-- GPS
+Created Ultron Phonegap project 
 
+1. This will not be uploaded to git 
+2. This will be the project used to test and run example code
+
+- GPS
 #### Notes place holder 
+Working code found on 4 March - 10 March mobile devlopment notes
+
+#### Next steps
+
+1. Add working code to ultron 
+2. Review code and take snippets 
+3. Push confirmed code from Ultron to Stark
+
+
 
 #### code place holder 
 ```
