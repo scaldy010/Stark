@@ -36,6 +36,8 @@ Created Ultron Phonegap project
 #### Notes place holder 
 Working code found on 4 March - 10 March mobile devlopment notes
 
+[ weather tutorial ](https://www.youtube.com/watch?v=OFjxqzMTsBc&t=78s)
+
 #### Next steps
 
 1. ~~Add working code to ultron~~
