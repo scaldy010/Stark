@@ -35,10 +35,9 @@ Working code found on 4 March - 10 March mobile devlopment notes
 
 #### Next steps
 
-1. Add working code to ultron 
-2. Review code and take snippets 
-3. Implement snippets from Ultron to Blackwiddow
-3. Push confirmed code from Blackwiddow to Stark
+1. ~~Add working code to ultron~~
+2. ~~Review code and take snippets~~
+3. ~~Push confirmed code from ultron to Stark~~
 
 
 
