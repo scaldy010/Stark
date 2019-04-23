@@ -1,4 +1,5 @@
 function startApp(){
+  alert("got to start app");
   //Placeholders
   var lat, lon;
 
@@ -17,6 +18,7 @@ function startApp(){
     console.log('err', err);
   });
   openCage(position)
+  alert("after open cage");
 }
 
 

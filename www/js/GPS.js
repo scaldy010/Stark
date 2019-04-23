@@ -12,6 +12,7 @@ $$(document).on('deviceready', function() {
 });
 
 function openCage(position){
+    alert("got to open cage");
 
     var lat = position.coords.latitude;
     var lon = position.coords.longitude;
@@ -39,11 +40,7 @@ function openCage(position){
         var city = responseJSON.results[0].components.city;
         var country = responseJSON.results[0].components.country;
         var currency = responseJSON.results[0].annotations.currency.name;
-        alert
-    (
-      "lat =" + lat + "/n" + 
-      "lon =" + lon 
-    );
+   
         
 
        
