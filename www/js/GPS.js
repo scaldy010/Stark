@@ -47,7 +47,7 @@ function openCage(position){
     var http = new XMLHttpRequest();
 
    
-    const url = 'https://api.opencagedata.com/geocode/v1/json?q='+lat+'+'+ lon+'&key=22e5695431c543d682e4d4b52ec743ab';
+    const url = 'https://api.opencagedata.com/geocode/v1/json?q='+lat+'+'+ lon+'&key=b4d8a0a740ea4821b56bcb4b53fb8750';
   
     http.open("GET", url);
    
