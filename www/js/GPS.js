@@ -19,7 +19,7 @@ $$(document).on('deviceready', function() {
 
 
     
-}
+
 function openCage(position){
 
     var lat = position.coords.latitude;
