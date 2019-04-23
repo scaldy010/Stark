@@ -8,7 +8,15 @@ function openCage(position, gotPositionCallback) {
     http.send();
 
     http.onreadystatechange = (e) => {
+        // https://stackoverflow.com/questions/14306187/xmlhttprequest-onreadystatechange-called-multiple-times
+        if(http.readyState !== 4) return;
+
         var response = http.responseText;
+        if(!response) return;
+
+        console.log("==========");
+        console.log(response);
+        console.log("==========");
         var responseJSON = JSON.parse(response);
 
         console.log(responseJSON);
@@ -22,19 +30,19 @@ function openCage(position, gotPositionCallback) {
     }
 
 }
-function initMap(position) {
-    var lat = position.coords.latitude;
-    var lon = position.coords.longitude;
-    var cct = { lat, lon };
-    var map = new
-        google.maps.Map(document.getElementById('map'),
-            {
-                zoom: 4,
-                center: cct
-            }
-        );
-    var marker = new google.maps.Marker({
-        position: cct,
-        map: map
-    });
-}
+// function initMap(position) {
+//     var lat = position.coords.latitude;
+//     var lon = position.coords.longitude;
+//     var cct = { lat, lon };
+//     var map = new
+//         google.maps.Map(document.getElementById('map'),
+//             {
+//                 zoom: 4,
+//                 center: cct
+//             }
+//         );
+//     var marker = new google.maps.Marker({
+//         position: cct,
+//         map: map
+//     });
+// }

@@ -16,7 +16,7 @@ function startApp()
         // var oc = "City : " + city + "<br>Country : " + country + "<br>Currency : " + currency;
         // document.getElementById('opencage').innerHTML = oc;
     });
-    initMap(position);
+    // initMap(position);
     // Once the request has been processed and we have
     // and answer, we can do something with it
 
