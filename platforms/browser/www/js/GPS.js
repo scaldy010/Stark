@@ -12,7 +12,7 @@ $$(document).on('deviceready', function() {
 });
 
 function openCage(position){
-    alert("got to open cage");
+    alert("got to open cage hellooooo!!!");
 
     var lat = position.coords.latitude;
     var lon = position.coords.longitude;
