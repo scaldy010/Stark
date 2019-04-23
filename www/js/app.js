@@ -12,13 +12,14 @@ function startApp(){
     lon = position.coords.longitude;
     // Once the request has been processed and we have
     // and answer, we can do something with it
+    openCage(position);
     
   }, function(err) {
     // Handle some error
     console.log('err', err);
   });
-  openCage(position)
-  alert("after open cage");
+
+ 
 }
 
 
