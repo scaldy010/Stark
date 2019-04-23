@@ -2,10 +2,10 @@
 # GPS Location
 
 ## Objectives
+1. ~~bang head agaisnt wall for hours~~
+1. ~~take time to review code~~
+    1. ~~should have been done before now (your a dope)~~
 
-- Use Phonegap to read the GPS location of the device.
-- Use the Google Map API to display a map in your application
-- Use the reading of the GPS sensor to pin point the location of the device on a Google Map
 
 ##Background / Preparation
 
