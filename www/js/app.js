@@ -16,7 +16,6 @@ function startApp(){
       "lat =" + lat + "/n" + 
       "lon =" + lon 
     );
-
   }, function(err) {
     // Handle some error
     console.log('err', err);
