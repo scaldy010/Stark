@@ -1,6 +1,5 @@
 function startApp() 
 {
-  alert("got to start app");
   //Placeholders
   var lat, lon;
 
@@ -11,10 +10,16 @@ function startApp()
     // Save current position
     lat = position.coords.latitude;
     lon = position.coords.longitude;
-    openCage(position);
+
+    openCage(position, function(err, result) {
+      console.log('openCage results', result);
+        // var oc = "City : " + city + "<br>Country : " + country + "<br>Currency : " + currency;
+        // document.getElementById('opencage').innerHTML = oc;
+    });
+    initMap(position);
     // Once the request has been processed and we have
     // and answer, we can do something with it
-initMap(position);
+
 
   }, function (err) {
     // Handle some error
