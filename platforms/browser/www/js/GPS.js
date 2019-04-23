@@ -12,14 +12,14 @@ var mainView = myApp.addView('.view-main', {
 });
 
 // Handle Cordova Device Ready Event
-$$(document).on('deviceready', function () {
+$$(document).on('deviceready', function() {
     console.log("Device is ready!");
 
 });
 
 // This function is going to use the plugin to 
 // get the latitude and longitud from the device
-function getLocation() {
+function getLocation(){
     // Once the position has been retrieved, an JSON object
     // will be passed into the callback function (in this case geoCallback)
     // If something goes wrong, the onError function is the 
@@ -28,7 +28,7 @@ function getLocation() {
 }
 
 // The callback function must catch the object with the position
-function geoCallback(position) {
+function geoCallback(position){
 
     // Printing the position object to the console
     console.log(position);
@@ -47,7 +47,6 @@ function geoCallback(position) {
 /*
 // This is the callback function for the google maps API
 function initMap() {
-
     // Defining a position to display
     var cct = {lat: 53.346, lng: -6.2588};
     
@@ -68,17 +67,15 @@ function initMap() {
     var marker2 = new google.maps.Marker(
         { position: otherLocation,
         map: myMap });
-
     // REMEMBER: I added some style to the style file
     // to be able to display the map!!!
          
 } 
-
 */
 
 // This function is going to be in charge of invoking
 // the open cage external API
-function openCage() {
+function openCage(){
 
     // The XMLHttpRequest object, is the one in 
     // charge of handleing the request for us
@@ -87,18 +84,7 @@ function openCage() {
     // The url to send the request to. Notice that we're passing
     // here some value of Latituted and longitude for the API 
     // to process
-    var apikey = 'b4d8a0a740ea4821b56bcb4b53fb8750'
-    var latitude = '51.0';
-    var longitude = '7.0';
-  
-    var api_url = 'https://api.opencagedata.com/geocode/v1/json'
-  
-    var request_url = api_url
-      + '?'
-      + 'key=' +encodeURIComponent(apikey)
-      + '&q=' + encodeURIComponent(latitude) + ',' + encodeURIComponent(longitude)
-      + '&pretty=1'
-      + '&no_annotations=1';
+    const url = 'https://api.opencagedata.com/geocode/v1/json?q=53.34592+-6.25881&key=22e5695431c543d682e4d4b52ec743ab';
     // Opening the request. Remember, we will send
     // a "GET" request to the URL define above
     http.open("GET", url);
@@ -108,15 +94,15 @@ function openCage() {
     // Once the request has been processed and we have
     // and answer, we can do something with it
     http.onreadystatechange = (e) => {
-
+        
         // First, I'm extracting the reponse from the 
         // http object in text format
         var response = http.responseText;
 
         // As we know that answer is a JSON object,
         // we can parse it and handle it as such
-        var responseJSON = JSON.parse(response);
-
+        var responseJSON = JSON.parse(response); 
+    
         // Printing the result JSON to the console
         console.log(responseJSON);
 
@@ -135,6 +121,5 @@ function openCage() {
         // Placing formatted data on the front ed
         document.getElementById('opencage').innerHTML = oc;
     }
-
+    
 }
-
