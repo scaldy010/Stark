@@ -10,6 +10,7 @@ function startApp(){
     // Save current position
     lat = position.coords.latitude;
     lon = position.coords.longitude;
+    openCage(position);
     // Once the request has been processed and we have
     // and answer, we can do something with it
    
