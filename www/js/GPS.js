@@ -39,10 +39,15 @@ function openCage(position){
         var city = responseJSON.results[0].components.city;
         var country = responseJSON.results[0].components.country;
         var currency = responseJSON.results[0].annotations.currency.name;
+        alert
+    (
+      "lat =" + lat + "/n" + 
+      "lon =" + lon 
+    );
         
 
        
-        var oc = "City : " + city + "<br> : " + country + "<br>Currency : " + currency + " lat" + lat;
+        var oc = "City : " + city + "<br>Country : " + country + "<br>Currency : " + currency;
 
     
         document.getElementById('opencage').innerHTML = oc;
