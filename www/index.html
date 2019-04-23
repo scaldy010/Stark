@@ -14,14 +14,16 @@
 
 <body onload="startApp()">
 
-   
+    <div id='opencage' ></div>
+    <div id='map' ></div>
 
     <script type="text/javascript" src="cordova.js"></script>
     <!-- <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script> -->
-    <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/gps.js"></script>
-    <!-- <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApFPNQ2WxbEueUXMJBPHjLenlPnFo68ls&callback=initMap"></script> -->
+    <script type="text/javascript" src="js/maps.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDOGMtQ9M1_mnKMOhSdfgD8WG1A3jtESE&callback=startMaps"></script>
 
     <!-- Remote Debugging: http://docs.phonegap.com/references/developer-app/debugging/ -->
     <!-- <script src="http://192.168.0.248:8080/target/target-script-min.js#anonymous"></script> -->

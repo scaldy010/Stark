@@ -1,3 +1,12 @@
+function getGps(callback) {
+    navigator.geolocation.getCurrentPosition(function (position) {
+        // console.log("Pos", position);
+
+        // error first by convention
+        callback(null, position);
+    });
+}
+
 function openCage(position, gotPositionCallback) {
     var lat = position.coords.latitude;
     var lon = position.coords.longitude;
@@ -14,12 +23,9 @@ function openCage(position, gotPositionCallback) {
         var response = http.responseText;
         if(!response) return;
 
-        console.log("==========");
-        console.log(response);
-        console.log("==========");
         var responseJSON = JSON.parse(response);
 
-        console.log(responseJSON);
+        // console.log(responseJSON);
 
         var city = responseJSON.results[0].components.city;
         var country = responseJSON.results[0].components.country;
@@ -30,19 +36,3 @@ function openCage(position, gotPositionCallback) {
     }
 
 }
-// function initMap(position) {
-//     var lat = position.coords.latitude;
-//     var lon = position.coords.longitude;
-//     var cct = { lat, lon };
-//     var map = new
-//         google.maps.Map(document.getElementById('map'),
-//             {
-//                 zoom: 4,
-//                 center: cct
-//             }
-//         );
-//     var marker = new google.maps.Marker({
-//         position: cct,
-//         map: map
-//     });
-// }

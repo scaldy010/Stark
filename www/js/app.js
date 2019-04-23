@@ -1,28 +1,35 @@
+
+// placeholders
+var position;
+var googleMapsReady = false;
+
 function startApp() 
 {
-  //Placeholders
-  var lat, lon;
+  console.log("StartApp()");
 
-  console.log("Start");
-  //Get current position
-  navigator.geolocation.getCurrentPosition(function (position) {
-    console.log("Pos", position);
-    // Save current position
-    lat = position.coords.latitude;
-    lon = position.coords.longitude;
-
-    openCage(position, function(err, result) {
-      console.log('openCage results', result);
-        // var oc = "City : " + city + "<br>Country : " + country + "<br>Currency : " + currency;
-        // document.getElementById('opencage').innerHTML = oc;
-    });
-    // initMap(position);
-    // Once the request has been processed and we have
-    // and answer, we can do something with it
-
-
-  }, function (err) {
-    // Handle some error
-    console.log('err', err);
+  getGps(function (err, result) {
+    position = result;
+  
+    // call open cage with position
+    openCage(position, openCageCallback);
+    
+    // call maps with position
+    if(googleMapsReady) {
+      initMap(position);
+    }
   });
+
+  function openCageCallback(err, cage) {
+    console.log('openCage results', cage);
+    var { city, country, currency } = cage;
+
+    // Update DOM
+    var oc = "City : " + city + "<br>Country : " + country + "<br>Currency : " + currency;
+    document.getElementById('opencage').innerHTML = oc;
+  }
+}
+
+// google maps callback
+function startMaps() {
+  googleMapsReady = true;
 }
