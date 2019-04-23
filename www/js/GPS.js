@@ -1,24 +1,15 @@
 // Initialize app
 var myApp = new Framework7();
-
-
-
 var $$ = Dom7;
-
-
 var mainView = myApp.addView('.view-main', {
     // Because we want to use dynamic navbar, we need to enable it for this view:
     dynamicNavbar: true
 });
-
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
     console.log("Device is ready!");
 
 });
-
-
-    
 
 function openCage(position){
 
@@ -51,7 +42,7 @@ function openCage(position){
         
 
        
-        var oc = "City : " + city + "<br>Country : " + country + "<br>Currency : " + currency +" lat" + lat;
+        var oc = "City : " + city + "<br> : " + country + "<br>Currency : " + currency + " lat" + lat;
 
     
         document.getElementById('opencage').innerHTML = oc;
