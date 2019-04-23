@@ -1,16 +1,3 @@
-// Initialize app
-var myApp = new Framework7();
-var $$ = Dom7;
-var mainView = myApp.addView('.view-main', {
-    // Because we want to use dynamic navbar, we need to enable it for this view:
-    dynamicNavbar: true
-});
-// Handle Cordova Device Ready Event
-$$(document).on('deviceready', function() {
-    console.log("Device is ready!");
-
-});
-
 function openCage(position){
     alert("got to open cage hellooooo!!!");
 
@@ -51,3 +38,19 @@ function openCage(position){
     }
     
 }
+function initMap(position) 
+{
+    var lat = position.coords.latitude;
+    var lon = position.coords.longitude;
+    var cct = {lat,lon};
+    var map = new
+   google.maps.Map(document.getElementById('map'),
+   { zoom: 4,
+    center: cct
+    }
+    );
+    var marker = new google.maps.Marker({
+    position: cct,
+    map: map
+    });
+   }

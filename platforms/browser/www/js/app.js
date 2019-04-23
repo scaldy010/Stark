@@ -14,7 +14,7 @@ function startApp()
     openCage(position);
     // Once the request has been processed and we have
     // and answer, we can do something with it
-
+initMap(position);
 
   }, function (err) {
     // Handle some error
