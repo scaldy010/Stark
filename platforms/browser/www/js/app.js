@@ -43,7 +43,7 @@ function startApp(){
         // Formattng data to put it on the front end
         var oc = "City: " + city + "<br>Country: " + country + "<br>Currency: " + currency;
 
-        // Placing formatted data on the front ed
+        // Placing formatted data on the front end
         document.getElementById('opencage').innerHTML = oc;
     }
   }, function(err) {
