@@ -30,9 +30,10 @@ function openCage(position, gotPositionCallback) {
         var city = responseJSON.results[0].components.city;
         var country = responseJSON.results[0].components.country;
         var currency = responseJSON.results[0].annotations.currency.name;
+        var iso_code = responseJSON.results[0].annotations.currency.iso_code;
 
         // by convention put any error as first parameter
-        gotPositionCallback(null, { city, country, currency });
+        gotPositionCallback(null, { city, country, currency, iso_code });
     }
 
 }

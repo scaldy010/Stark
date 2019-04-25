@@ -14,13 +14,13 @@
 - ~~Learn markdown~~ 
 - ~~gatehr links to demos~~
 
-Cleaned | Formated | link |
+Completed | Formated | link |
 | --- | --- | --- |
 |    []|    [X]| [ Take picture ](./Documents/Picture.md) |
 |    []|     [X]| [ Currency Converter ](./Documents/Currencyconverter.md) |
 |    []|     [X]| [ Saving data ](./Documents/Savingdata.md) |
-|    []|     [X]| [ GPS  ](./Documents/GPS.md) |
-|    []|     [X]| [ External API's ](./Documents/ExternalAPI.md) |
+|    [X]|     [X]| [ GPS  ](./Documents/GPS.md) |
+|    [X]|     [X]| [ External API's ](./Documents/ExternalAPI.md) |
 
 
 ### Phase 1 - practical research 
@@ -32,136 +32,78 @@ Created Ultron Phonegap project
 1. This will not be uploaded to git 
 2. This will be the project used to test and run example code
 
-- GPS
-#### Notes place holder 
-Working code found on 4 March - 10 March mobile devlopment notes
+---
 
-[ weather tutorial ](https://www.youtube.com/watch?v=OFjxqzMTsBc&t=78s)
+# GPS 
 
-#### Next steps
+Implemeneted GPS location with google maps 
 
-1. ~~Add working code to ultron~~
-2. ~~Review code and take snippets~~
-3. ~~Push confirmed code from ultron to Stark~~
+done using https://opencagedata.com
 
+##### inputs
+1. latitude  
+1. longitude
 
+Both taken from the phone and then an API call is used to return the following 
 
-#### code place holder 
+##### outputs
+1. City 
+1. Country
+1. Currency 
+1. Iso_code
+
+Sample output 
+1. city: "Dublin 12" 
+1. Country: "Ireland"
+1. Currency: "Euro" 
+1. iso_code: "EUR"
+
 ##### HTML
 ```html
+<body onload="startApp()">
 
-<div id="position">Waiting for position...</div>
-
-<div id="opencage"> Waiting for city data...</div>
-
-<div class="block">
-    <div class="row">
-        <button class="col button button-fill button-round" onclick="getLocation()"> tell me where you are!</button>
-    </div>
-</div>
-
-<div class="block">
-    <div class="row">
-        <button class="col button button-fill button-round" onclick="openCage()"> City / Country </button>
-    </div>
-</div>                                         
+    <div id='opencage' ></div>
+    <div id='map' ></div>                                        
 ```
 
 ##### JavaScript
 
 ```javascript 
+function startApp() {
+  console.log("StartApp()");
 
-function getLocation(){
-    // Once the position has been retrieved, an JSON object
-    // will be passed into the callback function (in this case geoCallback)
-    // If something goes wrong, the onError function is the 
-    // one that will be run
-    navigator.geolocation.getCurrentPosition(geoCallback, onError);
+  getGps(function (err, result) {
+    position = result;
+
+    // call open cage with position
+    openCage(position, openCageCallback);
+
+    // call maps with position
+    if (googleMapsReady) {
+      initMap(position);
+    }
+  });
+
+  function openCageCallback(err, cage) {
+    console.log('openCage results', cage);
+    var { city, country, currency, iso_code } = cage;
+
+    // Update DOM
+    var oc = "City : " + city + "<br>Country : " + country + "<br>Currency : " + currency + "<br>Currency code :" + iso_code;
+    document.getElementById('opencage').innerHTML = oc;
+    iso_code = iso_code;
+  }
 }
-
-// The callback function must catch the object with the position
-function geoCallback(position){
-
-    // Printing the position object to the console
-    console.log(position);
-
-    // Extracting the latitude and longitude
-    // from the position object
-    var lat = position.coords.latitude;
-    var lon = position.coords.longitude;
-
-    // Formatting the data to put it on the front end
-    var location = "Lat: " + lat + "<br>Long: " + lon;
-
-    // Placing the data on the front end
-    document.getElementById('position').innerHTML = location;
-}
-
-// This is the callback function for the google maps API
-function initMap() {
-
-    // Defining a position to display
-    var cct = {lat: 53.346, lng: -6.2588};
-    
-    // Creating the map, centred on the position 
-    // defined above
-    var myMap = new google.maps.Map(document.getElementById('map'),
-        {zoom: 18,
-        center: cct });
-    
-    // Creating a marker to place on the map
-    // at the position defined above
-    var marker = new google.maps.Marker(
-        { position: cct,
-        map: myMap });
-    
-    // Adding another pointer
-    var otherLocation = {lat: 53.3458, lng: -6.2575};
-    var marker2 = new google.maps.Marker(
-        { position: otherLocation,
-        map: myMap });
-
-    // REMEMBER: I added some style to the style file
-    // to be able to display the map!!!
-
 ```
 
 
 
-- weather API 
-#### Notes place holder 
-
-#### code place holder 
-```
-
-
-```
 - take picture 
 
 [sample take a picture with saving project](https://github.com/apontejaj/Framework2) 
-#### Notes place holder 
-
-#### code place holder 
-```
 
 
-```
-- save data 
-#### Notes place holder 
 
-#### code place holder 
-```
-
-
-```
-- currency exchange 
-#### Notes place holder 
-
-#### code place holder 
-```
-
-
-```
 
 ### phase 2 - skeleton project 
 
